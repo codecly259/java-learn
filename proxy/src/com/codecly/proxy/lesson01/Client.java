@@ -5,7 +5,10 @@ package com.codecly.proxy.lesson01;
  */
 public class Client {
     public static void main(String[] args) {
-        CarExtends carExtends = new CarExtends();
-        carExtends.move();
+        Car1 car1 = new Car1();
+        car1.move();
+
+        Car2 car2 = new Car2();
+        car2.move();
     }
 }
