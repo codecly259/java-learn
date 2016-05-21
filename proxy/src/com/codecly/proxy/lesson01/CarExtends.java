@@ -8,7 +8,7 @@ import com.codecly.proxy.Car;
  */
 public class CarExtends extends Car {
     @Override
-    public void move() throws InterruptedException {
+    public void move() {
         System.out.println("开始行驶");
         Long startTime = System.currentTimeMillis();
         super.move();
