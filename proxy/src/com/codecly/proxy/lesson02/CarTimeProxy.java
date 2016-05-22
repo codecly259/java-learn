@@ -7,11 +7,11 @@ import com.codecly.proxy.Moveable;
  * Created by maxinchun on 2016/5/21.
  *使用聚合方式实现代理
  */
-public class TimeProxy implements Moveable {
+public class CarTimeProxy implements Moveable {
 
     private Moveable car;
 
-    public TimeProxy(Moveable car) {
+    public CarTimeProxy(Moveable car) {
         this.car = car;
     }
 

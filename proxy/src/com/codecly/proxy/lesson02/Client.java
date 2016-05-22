@@ -10,14 +10,14 @@ public class Client {
     public static void main(String[] args) {
         Car car = new Car();
         // 先记录时间，再记录日志
-        TimeProxy timeProxy = new TimeProxy(car);
-        LogProxy logProxy = new LogProxy(timeProxy);
-        logProxy.move();
+        CarTimeProxy carTimeProxy = new CarTimeProxy(car);
+        CarLogProxy carLogProxy = new CarLogProxy(carTimeProxy);
+        carLogProxy.move();
 
         // 先记录日志，再记录时间
-        LogProxy logProxy1 = new LogProxy(car);
-        TimeProxy timeProxy1 = new TimeProxy(logProxy1);
-        timeProxy1.move();
+        CarLogProxy carLogProxy1 = new CarLogProxy(car);
+        CarTimeProxy carTimeProxy1 = new CarTimeProxy(carLogProxy1);
+        carTimeProxy1.move();
     }
 
 }

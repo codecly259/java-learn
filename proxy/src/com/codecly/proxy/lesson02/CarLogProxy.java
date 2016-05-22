@@ -6,11 +6,11 @@ import com.codecly.proxy.Moveable;
 /**
  * Created by maxinchun on 2016/5/22.
  */
-public class LogProxy implements Moveable{
+public class CarLogProxy implements Moveable{
 
     private Moveable car;
 
-    public LogProxy(Moveable car) {
+    public CarLogProxy(Moveable car) {
         this.car = car;
     }
 
