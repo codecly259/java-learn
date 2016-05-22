@@ -7,5 +7,21 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/cglib-3.2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/cglib-RELEASE_3_2_2.zip!/cglib-RELEASE_3_2_2/cglib-integration-test/src/test/java" />
+          <root url="jar://$MODULE_DIR$/lib/cglib-RELEASE_3_2_2.zip!/cglib-RELEASE_3_2_2/cglib-jmh/src/main/java" />
+          <root url="jar://$MODULE_DIR$/lib/cglib-RELEASE_3_2_2.zip!/cglib-RELEASE_3_2_2/cglib-sample/src/main/java" />
+          <root url="jar://$MODULE_DIR$/lib/cglib-RELEASE_3_2_2.zip!/cglib-RELEASE_3_2_2/cglib/src/main/java" />
+          <root url="jar://$MODULE_DIR$/lib/cglib-RELEASE_3_2_2.zip!/cglib-RELEASE_3_2_2/cglib/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

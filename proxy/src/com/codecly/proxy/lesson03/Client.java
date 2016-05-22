@@ -15,8 +15,10 @@ public class Client {
     public static void main(String[] args) {
         Car car = new Car();
         Class<?> cls = car.getClass();
+        System.out.println(cls.getName());
         // 代理类记录时间
         Moveable m = (Moveable) Proxy.newProxyInstance(cls.getClassLoader(), cls.getInterfaces(), new TimeHandler(car));
+        System.out.println(m.getClass().getName());
         m.move();
         System.out.println("========");
         // 代理类先记录日志，再记录时间
